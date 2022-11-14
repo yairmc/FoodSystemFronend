@@ -1,14 +1,10 @@
 html {
     font-family: Poppins;
-    height: 100vh;
-
 }
 
 .container {
     display: flex;
     position: relative;
-    height: 100%;
-
 }
 
 /* left part of the login  */
@@ -21,12 +17,12 @@ html {
 }
 
 .headerLogin {
-    margin-top: 50px;
+    margin-top: 34px;
     align-items: initial;
     color: #AAE400;
     border: 3px solid #AAE400;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .headerLogin p {
@@ -36,8 +32,8 @@ html {
 
 .welcomeText {
     margin: 0;
-    font-size: 40px;
-    padding-top: 100px;
+    font-size: 35px;
+    padding-top: 70px;
 }
 
 .welcomeText span {
@@ -45,9 +41,9 @@ html {
 }
 
 .welcomeParagraph {
-    font-size: 30px;
-    padding-top: 60px;
-    width: 60%;
+    font-size: 25px;
+    padding-top: 40px;
+    width: 80%;
 }
 
 .imgPizza {
@@ -62,7 +58,7 @@ html {
     background-color: black;
     display: flex;
     flex-direction: column;
-    padding: 110px 90px;
+    padding: 50px 90px;
 }
 
 .loginInput {
@@ -100,5 +96,8 @@ html {
     font-style: italic;
     font-size: 15px;
     text-align: center;
-    margin-top: 180px;
+    margin-top: 130px;
+}
+::-webkit-scrollbar {
+    display: none;
 }
