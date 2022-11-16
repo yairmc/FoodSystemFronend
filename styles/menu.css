@@ -87,9 +87,9 @@
     column-gap: 2.1rem;
     display: flex;
     flex-shrink: 0;
-    height: 31.9rem;
+    height: 24rem;
     margin-bottom: 2.1rem;
-    width: 800%;
+    width: 100%;
 }
 
 .group-78-Fwm {
@@ -264,7 +264,7 @@
     align-items: center;
     display: flex;
     flex-shrink: 0;
-    height: 31.9rem;
+    height: 24rem;
     margin: 0rem 43.9rem 0rem 0.1rem;
     width: calc(100% - 44rem);
 }
