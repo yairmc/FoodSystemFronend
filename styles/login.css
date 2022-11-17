@@ -14,8 +14,15 @@ html {
     flex-direction: column;
     padding: 0 130px;
     align-items: center;
+    justify-content: space-between;
+    height: 100vh;
 }
 
+.headerLayout{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 .headerLogin {
     margin-top: 34px;
     align-items: initial;
@@ -23,6 +30,8 @@ html {
     border: 3px solid #AAE400;
     font-weight: 600;
     font-size: 35px;
+    width: 50%;
+    text-align: center;
 }
 
 .headerLogin p {
@@ -44,12 +53,16 @@ html {
     font-size: 25px;
     padding-top: 40px;
     width: 80%;
+    margin: 0 auto;
 }
 
 .imgPizza {
     width: 100%;
 }
 
+.headerContent{
+    text-align: center;
+}
 
 /* rigth part of the login */
 
@@ -64,9 +77,14 @@ html {
 .loginInput {
     background-color: transparent;
     border-style: none;
-    border-bottom: 2px solid white;
     font-size: 30px;
     margin-top: 90px;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    width: 100%;
+    padding: 1rem 0rem;
 }
 
 .btnLogIn {
@@ -78,6 +96,11 @@ html {
     height: 55px;
     font-size: 30px;
     font-weight: 400;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.btnLogIn:hover{
+    background-color: #8fbd03;
 }
 
 .btnSignUp {
@@ -89,6 +112,8 @@ html {
     height: 40px;
     text-decoration: underline;
     font-weight: 100;
+    text-align: center;
+    margin-top: 2rem;
 }
 
 .text {
