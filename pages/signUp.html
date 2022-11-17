@@ -29,16 +29,19 @@
         </div>
 
         <div class="loginContainer">
-            <input type="text" class="loginInput" id="name" placeholder="Name">
-            <input type="text" class="loginInput" id="usernameInput" placeholder="Username">
-            <input type="password" class="loginInput" id="passwordInput" placeholder="Password">
-            <input type="password" class="loginInput" id="passwordInput" placeholder="repetPassword">
-            <button class="btnLogIn" id="logIn">Log In</button>
-            <button class="btnSignUp" id="singUp">Sign Up</button>
+            <form id="formSignup">
+                <input type="text" class="loginInput" id="name" placeholder="Name">
+                <input type="text" class="loginInput" id="usernameInput" placeholder="Username">
+                <input type="password" class="loginInput" id="passwordInput" placeholder="Password">
+                <input type="password" class="loginInput" id="passwordInput" placeholder="repetPassword">
+                <input type="submit" id="signUp" class="btnLogIn" value="Signup">
+                <a href="login.html" id="logIn" class="btnSignUp">Login</a>
+            </form>
             <p class="text">I accept the terms and conditions by creating an <br> account.</p>
         </div>
     </div>
 
+    <script src="../scripts/signUp.js"></script>
 </body>
 
 </html>
