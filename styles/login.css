@@ -126,3 +126,31 @@ html {
 ::-webkit-scrollbar {
     display: none;
 }
+
+.successMessage{
+    width: 100%;
+    padding: .3rem;
+    border: 2px solid #AAE400;
+    background-color:  #d0e496;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.errorMessage{
+    width: 100%;
+    padding: .3rem;
+    border: 2px solid #e40000;
+    background-color:  #e49696;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e40000;
+    font-weight: bold;
+    font-size: 1.2rem;
+}

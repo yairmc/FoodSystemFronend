@@ -1,5 +1,10 @@
 let url = "http://localhost:3001";
 let formLogin = document.querySelector("#formLogin");
+let messageSection = document.querySelector("#messageSection");
+let messagesTypes = {
+    SUCCESS: "success",
+    ERROR: "error",
+};
 
 document.addEventListener("DOMContentLoaded", () => {
     addEvents();
@@ -22,13 +27,37 @@ const fetchLogin = async (e) => {
             },
             body: JSON.stringify(loginInfo),
         });
-        const token = await response.json();
-        userName.value = "";
-        password.value = "";
-        localStorage.setItem("token", JSON.stringify(token.token));
-        location.href = "productManagment.html";
+        const credentials = await response.json();
+
+        if (credentials.hasOwnProperty("token")) {
+            userName.value = "";
+            password.value = "";
+            localStorage.setItem("token", JSON.stringify(credentials.token));
+            showMessage("Great!!!", messagesTypes.SUCCESS);
+            setTimeout(() => {
+                location.href = "productManagment.html";
+            }, 3000);
+        } else {
+            showMessage(credentials.msg, messagesTypes.ERROR);
+        }
     } catch (error) {
         userName.value = "";
         password.value = "";
     }
+};
+
+const showMessage = (msg, type) => {
+    messageSection.innerHTML = "";
+    const pMessage = document.createElement("P");
+    pMessage.textContent = msg;
+    if (type === messagesTypes.SUCCESS) messageSection.classList.add("successMessage");
+    else if (type === messagesTypes.ERROR) messageSection.classList.add("errorMessage");
+    messageSection.appendChild(pMessage);
+
+    setTimeout(() => {
+        if (messageSection.classList.contains("successMessage"))
+            messageSection.classList.remove("successMessage");
+        else messageSection.classList.remove("errorMessage");
+        messageSection.removeChild(pMessage);
+    }, 3000);
 };
