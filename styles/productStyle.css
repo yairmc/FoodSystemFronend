@@ -3,6 +3,7 @@
 :root {
     --font: 'Poppins', sans-serif;
     --green: #AAE400;
+    --green-hover:#8cba00;
     --white: #FFFFFF;
     --black: #000000;
     --backColor: #F5F5F5;
@@ -102,7 +103,11 @@ option {
 .menu-bottom a:hover {
     color: var(--green);
 }
-
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .input-search {
     display: flex;
     align-items: center;
@@ -192,4 +197,26 @@ tr:nth-child(odd) td {
 tr:hover td{
     background-color: var(--black);
     color: var(--white);
+}
+
+.addProduct__section{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.addProduct__section h3{
+    font-weight: 400;
+    color: #777777;
+}
+.addProduct__section a{
+    padding: 1rem;
+    background-color: var(--green);
+    text-decoration: none;
+    color: var(--white);
+    transition: .2s ease;
+}
+
+.addProduct__section a:hover{
+    transform: scale(1.2);
+    background-color: var(--green-hover);
 }
