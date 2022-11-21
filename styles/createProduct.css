@@ -26,6 +26,7 @@ body {
     font-size: 16px;
     margin: 0;
     background-color: var(--backColor);
+    overflow-y: hidden;
 }
 
 h1,
@@ -55,6 +56,8 @@ option {
     overflow-y: hidden;
     text-align: center;
     padding: 2rem 3rem;
+    height: 100vh;
+    overflow-y: scroll;
 }
 
 .layout-menu {
@@ -154,6 +157,7 @@ option {
     /* gap: 1rem; */
     width: 100%;
     border:solid;
+    border-color: rgb(234, 234, 234);
 }
 
 
@@ -321,12 +325,13 @@ tr:nth-child(odd) td {
     height: 55px;
     font-size: 30px;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .ingredients-container{
     display: inline-block;
     padding: 24px;
-    border-color: var(--grey);
+    border-color: rgb(234, 234, 234);
     border-style: solid;
 }
 
@@ -334,6 +339,11 @@ tr:nth-child(odd) td {
     color: var(--grey);
 }
 
-.ingredients-container label{
-    padding: 17px;
+.ingredientArea{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.ingredientArea label{
+    padding: 0;
 }
