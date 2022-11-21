@@ -220,3 +220,17 @@ tr:hover td{
     transform: scale(1.2);
     background-color: var(--green-hover);
 }
+
+.rowProduct{
+    animation-name: animateProduct;
+    animation-duration: .3s;
+}
+
+@keyframes animateProduct {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
