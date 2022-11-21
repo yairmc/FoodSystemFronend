@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="css/style.css" rel="stylesheet" />
-        <link rel="stylesheet" href="../styles/createProduct.css">
-    </head>
-    <body>
-        <div class="layout">
-            <div class="layout-menu">
-                <div class="menu-top">
-                    <h2>Welcome to Food System GAMER</h2>
-                    <a href="index.html"><img src="./../img/black-logo.png" alt="Logo Food System"></a>
-                </div>
-                
+
+<head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles/createProduct.css">
+</head>
+
+<body>
+    <div class="layout">
+        <div class="layout-menu">
+            <div class="menu-top">
+                <h2>Welcome to Food System GAMER</h2>
+                <a href="index.html"><img src="./../img/black-logo.png" alt="Logo Food System"></a>
+            </div>
+
             <div class="menu-bottom">
                 <a href=""> Order Management</a>
                 <a href="productManagment.html"> Product Management</a>
@@ -22,107 +23,59 @@
                 <a href=""> Users Management</a>
                 <a href=""> Role Management</a>
             </div>
-            </div>
-
-            <main class="layout-main">
-                <div class="cards">
-                    <div class="card product">
-                        <h2>Add product</h2>
-                        <form>
-                            <div class="inputs-form">
-                                <input type="text" placeholder="Price">
-                                <input type="text" placeholder="Cost">
-                                <input type="text" placeholder="Base price">
-                                <input type="text" placeholder="Taxes">
-                                <div class="container-form">
-                                    <select name="" id="">
-                                        <option value="1">------ Stock ------</option>
-                                        <option value="2">------ Stock ------</option>
-                                        <option value="3">------ Stock ------</option>
-                                        <option value="4">------ Stock ------</option>
-                                    </select>
-                                </div>
-                                <div class="container-form">
-                                    <select name="" id="">
-                                        <option value="1">------ Stock ------</option>
-                                        <option value="2">------ Stock ------</option>
-                                        <option value="3">------ Stock ------</option>
-                                        <option value="4">------ Stock ------</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="card ingredients">
-                        <h2>Add product</h2>
-                        <form>
-                            <div class="inputs-form">
-                                <input type="text" placeholder="Price">
-                                <input type="text" placeholder="Cost">
-                                <input type="text" placeholder="Base price">
-                                <input type="text" placeholder="Taxes">
-                                <select name="" id="">
-                                    <option value="------  Type  ------">Role</option>
-                                    <option value="------  Type  ------">Administrator</option>
-                                    <option value="------  Type  ------">Kitchen</option>
-                                    <option value="------  Type  ------">Waiter</option>
-                                </select>
-                                <select name="" id="">
-                                    <option value="------ Stock ------">Role</option>
-                                    <option value="------ Stock ------">Administrator</option>
-                                    <option value="------ Stock ------">Kitchen</option>
-                                    <option value="------ Stock ------">Waiter</option>
-                                </select>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="card card-container">
-                    </div>
-                    <div class="card ingredients">
-                        <h2>Ingredients</h2>
-                        <div class="ingredients-container">
-                            <input type="checkbox" id="vehicle1">
-                            <label for="vehicle1"> IngredientName</label><br>
-                            <input type="checkbox" id="vehicle1">
-                            <label for="vehicle1"> IngredientName</label><br>
-                            <input type="checkbox" id="vehicle1">
-                            <label for="vehicle1"> IngredientName</label><br>
-                            <input type="checkbox" id="vehicle1">
-                            <label for="vehicle1"> IngredientName</label><br>
-                            <input type="checkbox" id="vehicle1">
-                            <label for="vehicle1"> IngredientName</label><br>
-                            <input type="checkbox" id="vehicle1">
-                            <label for="vehicle1"> IngredientName</label><br>
-                            <input type="checkbox" id="vehicle1">
-                            <label for="vehicle1"> IngredientName</label><br>
-                            <input type="checkbox" id="vehicle1">
-                            <label for="vehicle1"> IngredientName</label><br>
-                            <input type="checkbox" id="vehicle1">
-                            <label for="vehicle1"> IngredientName</label><br>
-                        </div>
-                    </div>
-                    <div class="card products-info">
-                        <div>
-                            <h3 class="info-name">All Products</h3>
-                            <h3 class="number">20</h3>
-                        </div>
-                        <div>
-                            <h3 class="info-name">Prepared Products</h3>
-                            <h3 class="number">01</h3>
-                        </div>
-                        <div>
-                            <h3 class="info-name">Packaged Products</h3>
-                            <h3 class="number">07</h3>
-                        </div>
-                    </div>
-                    <div class="card btn">
-                        <button class="btnAdd" id="add">Add</button>
-                    </div>
-                </div>
-
-            </main>
         </div>
 
-        <script src="/scripts/index.js" type="module"></script>
-    </body>
+        <main class="layout-main">
+            <div class="cards">
+                <div class="card product">
+                    <h2>Add product</h2>
+                    <form>
+                        <div class="inputs-form">
+                            <input id="name" name="name" type="text" placeholder="Name">
+                            <input id="basePrice" name="basePrice" type="text" placeholder="Base Price">
+                            <input id="cost" name="cost" type="text" placeholder="Cost">
+                            <input id="taxes" name="taxes" type="text" placeholder="Taxes">
+                            <input id="stock" name="stock" type="number" placeholder="Stock" min="1">
+                            <div class="container-form">
+                                <select name="type" id="type">
+                                    <option value="no">Select a type</option>
+                                    <option value="Packaged">Packaged</option>
+                                    <option value="Prepared">Prepared</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="card card-container">
+                </div>
+                <div class="card ingredients">
+                    <h2>Ingredients</h2>
+                    <div id="ingredients-container" class="ingredients-container">
+                    </div>
+                </div>
+                <div class="card products-info">
+                    <div>
+                        <h3 class="info-name">All Products</h3>
+                        <h3 class="number">20</h3>
+                    </div>
+                    <div>
+                        <h3 class="info-name">Prepared Products</h3>
+                        <h3 class="number">01</h3>
+                    </div>
+                    <div>
+                        <h3 class="info-name">Packaged Products</h3>
+                        <h3 class="number">07</h3>
+                    </div>
+                </div>
+                <div class="card btn">
+                    <button class="btnAdd" id="btnAdd">Add</button>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="/scripts/createProduct.js" type="module"></script>
+</body>
+
 </html>

@@ -32,7 +32,7 @@ const fetchLogin = async (e) => {
         if (credentials.hasOwnProperty("token")) {
             userName.value = "";
             password.value = "";
-            localStorage.setItem("token", JSON.stringify(credentials.token));
+            localStorage.setItem("token-food", JSON.stringify(credentials.token));
             showMessage("Great!!!", messagesTypes.SUCCESS);
             setTimeout(() => {
                 location.href = "productManagment.html";
