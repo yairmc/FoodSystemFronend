@@ -1,0 +1,48 @@
+.container-option {
+    width: 20rem;
+    height: 15rem;
+    margin: 30px 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; 
+    cursor: pointer;
+    box-shadow: 0 3px 13px 6px rgb(0 0 0 / 10%);
+    transition: .2s ease;
+  }
+
+.container-option:hover{
+  transform: scale(1.1);
+  }
+  
+  .icon-option {
+    height: 20%;
+    padding-left: 1%;
+    width: auto;
+    padding-bottom: 105px;
+    padding-left: 1rem
+  }
+
+  
+  .container-text-option {
+    text-align: justify;
+    padding: 40px;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+  
+  .name-option {
+    font-size: 1rem;
+    margin-bottom: 45px;
+    margin-right: 1px;
+    text-align: justify;
+  }
+
+  
+  .description-option {
+    margin-left: -40px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1rem;
+  }
