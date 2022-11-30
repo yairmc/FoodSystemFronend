@@ -31,7 +31,7 @@
     text-align: center;
   }
   
-  .main-container {
+  .mainContainer {
     min-height: 300px;
     display: flex;
     flex-wrap: wrap;

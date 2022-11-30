@@ -1,4 +1,4 @@
-.container-option {
+.containerOption {
     width: 20rem;
     height: 15rem;
     margin: 30px 30px 30px;
@@ -11,11 +11,11 @@
     transition: .2s ease;
   }
 
-.container-option:hover{
+.containerOption:hover{
   transform: scale(1.1);
   }
   
-  .icon-option {
+  .iconOption {
     height: 20%;
     padding-left: 1%;
     width: auto;
@@ -24,7 +24,7 @@
   }
 
   
-  .container-text-option {
+  .containerTxtOption {
     text-align: justify;
     padding: 40px;
     font-family: poppins, sans-serif;
@@ -32,7 +32,7 @@
     line-height: 1.5rem;
   }
   
-  .name-option {
+  .nameOption {
     font-size: 1rem;
     margin-bottom: 45px;
     margin-right: 1px;
@@ -40,7 +40,7 @@
   }
 
   
-  .description-option {
+  .descriptionOption {
     margin-left: -40px;
     margin-bottom: 20px;
     text-align: center;
