@@ -1,0 +1,55 @@
+/*Side Bar Menu*/
+.layoutMenu {
+    padding-top: 4rem;
+    min-width: 30rem;
+    height: 100vh;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.layoutMenu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 4rem;
+    padding: 3rem;
+}
+
+.layoutMenu h2 {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.menuTop {
+    margin: 3rem 0rem;
+}
+
+.menuTop img {
+    margin: 3rem 0rem;
+}
+
+.username{
+    color: rgba(255, 255, 255, 0.717);
+}
+
+.menuBottom {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+}
+
+.menuBottom a {
+    font-weight: 200;
+    color: var(--white);
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+.menuBottom a:hover {
+    color: var(--green);
+}
+
+#selected_sidebar {
+    color: var(--green);
+}

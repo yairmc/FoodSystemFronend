@@ -1,0 +1,23 @@
+
+tbody {
+    margin: .5rem;
+}
+
+th,
+tr,
+td {
+    width: 150px;
+    height: 45px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+
+th {
+    font-weight: 100;
+    font-size: 14px;
+    color: var(--black);
+    background-color: var(--white);
+}

@@ -1,7 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import style from "./MenuPage.module.css"
 import { OptionMenu } from "../../components";
 
 function MenuPage() {
+  let navigate = useNavigate();
+
+  const handleOnSubmit = async (evt) => {
+    evt.preventDefault();
+    navigate("/ingredient");
+  }
   return (
     <div className={style.Menu}>
       <div className={style.header}>
@@ -19,11 +26,13 @@ function MenuPage() {
           name="Product Managment"
           description="Short Description Short Description Short Description"
         />
-        <OptionMenu
-          option="ingredientM"
-          name="Ingredient Managment"
-          description="Short Description Short Description Short Description"
-        />
+        <button className={style.btnOption} onClick={handleOnSubmit}>
+          <OptionMenu
+            option="ingredientM"
+            name="Ingredient Managment"
+            description="Short Description Short Description Short Description"
+          />
+        </button>
         <OptionMenu
           option="userM"
           name="User Managment"
