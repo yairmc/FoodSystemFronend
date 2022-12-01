@@ -1,0 +1,27 @@
+/*Search*/
+.inputSearch {
+    display: flex;
+    align-items: center;
+}
+
+.inputSearch input {
+    height: 4rem;
+    border: none;
+    color: var(--grey);
+    padding-left: 40px;
+    padding: .6rem;
+    outline: none;
+    font-family: var(--font);
+    width: 28rem;
+}
+
+.inputSearch button {
+    border: none;
+    height: 70%;
+    background-color: #ffffff00;
+    cursor: pointer;
+}
+
+.inputSearch button img {
+    width: 3rem;
+}
