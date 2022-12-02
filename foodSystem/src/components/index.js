@@ -3,6 +3,8 @@ import OptionMenu from "./optionMenu/OptionMenu"
 import SideBarMenu from "./sideBarMenu/SideBarMenu";
 import Search from "./search/Search";
 import TableIngredients from "./tableIngredients/TableIngredients";
+import TableProducts from "./tableProducts/TableProducts"
+
 export {
-    LoginForm, OptionMenu, SideBarMenu, Search, TableIngredients
+    LoginForm, OptionMenu, SideBarMenu, Search, TableIngredients, TableProducts
 }

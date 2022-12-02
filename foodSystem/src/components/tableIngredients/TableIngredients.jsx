@@ -2,6 +2,7 @@ import style from "./TableIngredients.module.css";
 const TableIngredients = () => {
     return (
         <>
+        <br></br>
             <table>
                 <thead>
                     <tr>
