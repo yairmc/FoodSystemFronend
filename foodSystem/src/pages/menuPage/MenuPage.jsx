@@ -9,6 +9,12 @@ function MenuPage() {
     evt.preventDefault();
     navigate("/admin/ingredient");
   }
+
+  const handleOnSubmitProduct = async (evt) => {
+    evt.preventDefault();
+    navigate("/product");
+  }
+
   return (
     <div className={style.Menu}>
       <div className={style.header}>
@@ -21,18 +27,20 @@ function MenuPage() {
           name="Order Managment"
           description="Short Description Short Description Short Description"
         />
+        <div onClick={handleOnSubmitProduct}>
         <OptionMenu
           option="productM"
           name="Product Managment"
           description="Short Description Short Description Short Description"
         />
-        <button className={style.btnOption} onClick={handleOnSubmit}>
+        </div>
+        <div onClick={handleOnSubmit}>
           <OptionMenu
             option="ingredientM"
             name="Ingredient Managment"
             description="Short Description Short Description Short Description"
           />
-        </button>
+        </div>
         <OptionMenu
           option="userM"
           name="User Managment"

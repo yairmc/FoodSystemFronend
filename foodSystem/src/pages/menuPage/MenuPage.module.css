@@ -12,10 +12,12 @@
   
   .title {
     max-width: 940px;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-family: poppins, sans-serif;
     line-height: 1.1;
-    margin-right: 725px;
+    position: relative;
+    top: 2rem;
+    left: 13rem;
   }
   
   .cointanerBtnFoodSystem{
@@ -42,11 +44,12 @@
   }
   
   .divBtn{
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
     color: #AAE400;
     position: relative;
-    bottom: 29px;
-    left: 536px;
+    top: 0.1rem;
+    left: 64rem;
     border-top-style: solid;
     border-right-style: solid;
     border-bottom-style: solid;

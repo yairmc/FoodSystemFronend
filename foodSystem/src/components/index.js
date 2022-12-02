@@ -5,6 +5,8 @@ import Search from "./search/Search";
 import TableIngredients from "./tableIngredients/TableIngredients";
 import CardIngredient from "./cardIngredient/CardIngredient";
 import InfoIngredient from "./infoIngredient/InfoIngredient";
+import TableProducts from "./tableProducts/TableProducts"
 export {
-    LoginForm, OptionMenu, SideBarMenu, Search, TableIngredients, CardIngredient, InfoIngredient
+    LoginForm, OptionMenu, SideBarMenu, Search, TableIngredients, CardIngredient, InfoIngredient, TableProducts
+
 }
