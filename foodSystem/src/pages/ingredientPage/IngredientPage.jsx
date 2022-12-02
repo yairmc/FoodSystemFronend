@@ -1,16 +1,22 @@
 import style from "./IngredientPage.module.css"
-import { SideBarMenu, Search, TableIngredients } from "../../components/index"
+import { Search, TableIngredients, CardIngredient, InfoIngredient } from "../../components/index"
 const IngredientPage = () => {
   return (
     <>
-      <div className={style.layout}>
-        <SideBarMenu />
-        <main className={style.layoutMain}>
-          <Search />
+      <main className={style.layoutMain}>
+        <Search />
+        <div className={style.containerTableCard}>
           <TableIngredients />
-        </main>
+          <div className={style.formSection}>
+            <CardIngredient />
+            <div className={style.infoSection}>
+              <InfoIngredient />
+            </div>
+          </div>
 
-      </div>
+        </div>
+      </main>
+
     </>
   )
 }
