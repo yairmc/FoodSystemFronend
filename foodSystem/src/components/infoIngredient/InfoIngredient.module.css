@@ -1,0 +1,11 @@
+.cardIngredient {
+    background-color: var(--white);
+    padding: 2rem;
+    margin-top: 2rem;
+    width: 30rem;
+    
+}
+
+p{
+    color: var(--green);
+}

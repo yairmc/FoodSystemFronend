@@ -7,7 +7,7 @@ function MenuPage() {
 
   const handleOnSubmit = async (evt) => {
     evt.preventDefault();
-    navigate("/ingredient");
+    navigate("/admin/ingredient");
   }
   return (
     <div className={style.Menu}>
