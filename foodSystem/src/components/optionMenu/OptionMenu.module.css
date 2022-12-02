@@ -25,6 +25,7 @@
   }
   
   .nameOption {
+    color: black;
     font-size: 1.8rem;
     text-align: center;
     font-weight: lighter;
@@ -35,6 +36,7 @@
 
   
   .descriptionOption {
+    color: black;
     font-size: 1.5rem;
     font-weight: lighter;
     text-align: center;
