@@ -12,7 +12,7 @@ function MenuPage() {
 
   const handleOnSubmitProduct = async (evt) => {
     evt.preventDefault();
-    navigate("/product");
+    navigate("/admin/product");
   }
 
   return (

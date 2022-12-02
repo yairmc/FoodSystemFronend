@@ -6,7 +6,9 @@ import TableIngredients from "./tableIngredients/TableIngredients";
 import CardIngredient from "./cardIngredient/CardIngredient";
 import InfoIngredient from "./infoIngredient/InfoIngredient";
 import TableProducts from "./tableProducts/TableProducts"
+import AddProduct from "./addProduct/AddProduct";
+
 export {
-    LoginForm, OptionMenu, SideBarMenu, Search, TableIngredients, CardIngredient, InfoIngredient, TableProducts
+    LoginForm, OptionMenu, SideBarMenu, Search, TableIngredients, CardIngredient, InfoIngredient, TableProducts, AddProduct
 
 }

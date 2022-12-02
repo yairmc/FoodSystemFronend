@@ -4,14 +4,10 @@ import style from "./ProductPage.module.css"
 const ProductPage = () => {
   return (
     <>
-      <div className={style.layout}>
-        <SideBarMenu />
         <main className={style.layoutMain}>
           <Search />
           <TableProducts />
         </main>
-
-      </div>
     </>
   )
 }
