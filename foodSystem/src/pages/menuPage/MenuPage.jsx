@@ -26,13 +26,13 @@ function MenuPage() {
           name="Product Managment"
           description="Short Description Short Description Short Description"
         />
-        <button className={style.btnOption} onClick={handleOnSubmit}>
+        <div onClick={handleOnSubmit}>
           <OptionMenu
             option="ingredientM"
             name="Ingredient Managment"
             description="Short Description Short Description Short Description"
           />
-        </button>
+        </div>
         <OptionMenu
           option="userM"
           name="User Managment"
