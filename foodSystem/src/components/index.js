@@ -7,8 +7,9 @@ import CardIngredient from "./cardIngredient/CardIngredient";
 import InfoIngredient from "./infoIngredient/InfoIngredient";
 import TableProducts from "./tableProducts/TableProducts"
 import AddProduct from "./addProduct/AddProduct";
+import CardOrder from "./cardOrder/CardOrder";
 
 export {
-    LoginForm, OptionMenu, SideBarMenu, Search, TableIngredients, CardIngredient, InfoIngredient, TableProducts, AddProduct
+    LoginForm, OptionMenu, SideBarMenu, Search, TableIngredients, CardIngredient, InfoIngredient, TableProducts, AddProduct, CardOrder
 
 }

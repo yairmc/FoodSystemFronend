@@ -3,7 +3,7 @@ const InfoIngredient = () => {
     return (
         <div className={style.cardIngredient}>
             <label htmlFor="">All Ingredients</label>
-            <p>200</p>
+            <p className={style.p}>200</p>
         </div>
     )
 }
