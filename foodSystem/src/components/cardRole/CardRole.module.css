@@ -36,14 +36,3 @@
     background-color: var(--green);
     font-family: var(--poppins);
  }
-
- select {
-    margin: 1rem;
-    background: #86858519;;
-    border: none;
-    font-size: 1.4rem;
-    height: 3rem;
-    padding: .5rem;
-    width: 18rem;
-    outline: none;
- }

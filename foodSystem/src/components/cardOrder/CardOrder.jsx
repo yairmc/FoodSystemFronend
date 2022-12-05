@@ -1,5 +1,4 @@
 import style from "./CardOrder.module.css"
-
 const CardOrder = () => {
     return (
         <div className={style.card}>

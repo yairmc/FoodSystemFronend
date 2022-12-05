@@ -1,22 +1,7 @@
 import style from "./SideBarMenu.module.css";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import IMG_BLACK_LOGO from "/img/black-logo.png"
 const SideBarMenu = () => {
-    let navigate = useNavigate();
-
-    const handleOnSubmitOrder = (evt) => {
-        evt.preventDefault();
-        navigate("/admin/order");
-    }
-    const handleOnSubmitProduct = (evt) => {
-        evt.preventDefault();
-        navigate("/admin/product");
-    }
-    const handleOnSubmitIngredient = (evt) => {
-        evt.preventDefault();
-        navigate("/admin/ingredient");
-    }
-
     return (
         <>
             <div className={style.layoutMenu}>
@@ -24,17 +9,17 @@ const SideBarMenu = () => {
                     <h2>Welcome to</h2>
                     <h2>Food System </h2>
                     <h2 className={style.username}>Username</h2>
-                    <a href="/menu"><img src={IMG_BLACK_LOGO} alt="Logo Food System" /></a>
+                    <Link to="/menu"><img src={IMG_BLACK_LOGO} alt="Logo Food System" /></Link>
                 </div>
                 <div className={style.menuBottom}>
-                    <a href=""> Create Order</a>
-                    <a href="/admin/order" onClick={handleOnSubmitOrder}> Order Management</a>
-                    <a href="/admin/product" onClick={handleOnSubmitProduct}> Product Management</a>
-                    <a href="/admin/ingredient" onClick={handleOnSubmitIngredient}> Ingredient Management</a>
-                    <a href=""> Create Product</a>
-                    <a href=""> Users Management</a>
-                    <a href=""> Role Management</a>
-                    <a href="/" className={style.logOut}> Log Out</a>
+                    <Link>Creates Order</Link>
+                    <Link to="/admin/order">Order Management</Link>
+                    <Link to="/admin/product">Product Management</Link>
+                    <Link to="/admin/ingredient">Ingredient Management</Link>
+                    <Link>Create Product</Link>
+                    <Link>Users Management</Link>
+                    <Link to="/admin/role">Role Management</Link>
+                    <Link to="/" className={style.logOut}>Log Out</Link>
                 </div>
             </div>
         </>

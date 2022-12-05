@@ -1,10 +1,10 @@
 import style from "./OrderPage.module.css";
-import { CardOrder, Search } from "../../components";
+import { CardOrder, Cmbx } from "../../components";
 const OrderPage = () => {
     return (
         <div className={style.main}>
             <div className={style.searchContainer}>
-                <Search />
+                <Cmbx />
             </div>
             <div className={style.cardsContainer}>
                 <CardOrder />
