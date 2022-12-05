@@ -4,8 +4,8 @@ import IngredientPage from "./ingredientPage/IngredientPage";
 import ProductPage from "./productPage/ProductPage";
 import AdminMasterPage from "./adminMasterPage/AdminMasterPage";
 import AddProductPage from "./productPage/addProductPage/AddProductPage";
-
+import OrderPage from "./orderPage/OrderPage";
 
 export {
-    LoginPage, MenuPage, IngredientPage, AdminMasterPage, ProductPage, AddProductPage
+    LoginPage, MenuPage, IngredientPage, AdminMasterPage, ProductPage, AddProductPage, OrderPage
 }

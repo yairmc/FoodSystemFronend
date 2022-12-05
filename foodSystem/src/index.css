@@ -29,6 +29,7 @@ body {
     color: var(--black);
     background-color: var(--backColor);
     overflow-y: hidden;
+    overflow-x:hidden
 }
 
 h1,
@@ -44,4 +45,5 @@ input,
 select,
 option {
     margin: 0;
+    color: var(--black);
 }

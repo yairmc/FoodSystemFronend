@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { LoginPage, MenuPage, IngredientPage, AdminMasterPage, ProductPage, AddProductPage } from "../pages"
+import { LoginPage, MenuPage, IngredientPage, AdminMasterPage, ProductPage, AddProductPage, OrderPage } from "../pages"
 
 const AppRouter = () => {
     return (
@@ -11,6 +11,7 @@ const AppRouter = () => {
                     <Route path="ingredient" element={<IngredientPage />} />
                     <Route path="product" element={<ProductPage />} />
                     <Route path="product/add" element={<AddProductPage />} />
+                    <Route path="order" element={<OrderPage />} />
                 </Route>
             </Routes>
         </Router>

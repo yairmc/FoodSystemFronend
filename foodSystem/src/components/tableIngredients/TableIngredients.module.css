@@ -12,7 +12,7 @@ td {
 
 tr {
 
-    border: rgba(0, 0, 0, 0.057) solid 1px;
+    border: none;
 }
 
 th {
@@ -27,9 +27,10 @@ th {
 
 
 /** CSS del head de la tabla*/
-.headTable tr{
+.headTable tr {
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
+
 .titleTable {
     font-weight: 400;
 }
@@ -44,6 +45,6 @@ th {
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-img{
+img {
     width: 2rem;
 }
