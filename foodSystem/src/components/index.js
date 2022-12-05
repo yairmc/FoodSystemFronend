@@ -8,8 +8,24 @@ import InfoIngredient from "./infoIngredient/InfoIngredient";
 import TableProducts from "./tableProducts/TableProducts"
 import AddProduct from "./addProduct/AddProduct";
 import CardOrder from "./cardOrder/CardOrder";
+import TableRole from "./tableRole/TableRole.jsx";
+import CardRole from "./cardRole/CardRole.jsx";
+import Cmbx from "./cmbx/Cmbx";
+import ModalOrder from "./modalOrder/ModalOrder";
 
 export {
-    LoginForm, OptionMenu, SideBarMenu, Search, TableIngredients, CardIngredient, InfoIngredient, TableProducts, AddProduct, CardOrder
-
+    LoginForm,
+    OptionMenu,
+    SideBarMenu,
+    Search,
+    TableIngredients,
+    CardIngredient,
+    InfoIngredient,
+    TableProducts,
+    AddProduct,
+    CardOrder,
+    TableRole,
+    CardRole,
+    Cmbx,
+    ModalOrder
 }

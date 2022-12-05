@@ -1,0 +1,12 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    align-items: center;
+}
+
+.roleSection{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
