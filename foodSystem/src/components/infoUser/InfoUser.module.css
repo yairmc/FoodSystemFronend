@@ -1,0 +1,33 @@
+.cardUserInfo {
+    background-color: var(--white);
+    padding: 2rem;
+    margin-top: 2rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    justify-content: center;
+}
+
+.infoLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.infoRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.p {
+    color: var(--green);
+}

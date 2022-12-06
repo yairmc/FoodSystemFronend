@@ -1,0 +1,19 @@
+.containerTableCard {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 2rem;
+}
+
+.layoutMain {
+    width: 100vw;
+    overflow-y: hidden;
+    text-align: center;
+    padding: 2rem 3rem;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.formSection{
+    height: 20rem;
+}
