@@ -16,6 +16,9 @@ import CardAddOrder from "./cardAddOrder/CardAddOrder";
 import InfoOrder from "./infoOrder/InfoOrder";
 import OrderProductDetail from "./orderProductDetail/OrderProductDetail";
 import ServiceDetail from "./serviceDetail/ServiceDetail";
+import CardUser from "./cardUser/CardUser";
+import InfoUser from "./infoUser/InfoUser"
+import TableUsers from "./tableUsers/TableUsers"
 
 export {
     LoginForm,
@@ -35,5 +38,8 @@ export {
     CardAddOrder,
     InfoOrder,
     OrderProductDetail,
-    ServiceDetail
+    ServiceDetail,
+    CardUser,
+    InfoUser,
+    TableUsers
 }

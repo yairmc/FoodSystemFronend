@@ -1,0 +1,50 @@
+
+/*CSS de head y body de la tabla*/
+th,
+tr,
+td {
+    width: 150px;
+    height: 45px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+tr {
+
+    border: rgba(0, 0, 0, 0.057) solid 1px;
+}
+
+th {
+    font-size: 14px;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.containerTable {
+    margin-top: 2rem;
+}
+
+
+/** CSS del head de la tabla*/
+.headTable tr{
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.titleTable {
+    font-weight: 400;
+}
+
+
+/*CSS del body de la tabla*/
+.bodyTable {
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+.bodyTable tr {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+img{
+    width: 2rem;
+}
