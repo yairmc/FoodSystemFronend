@@ -6,7 +6,16 @@ import AdminMasterPage from "./adminMasterPage/AdminMasterPage";
 import AddProductPage from "./productPage/addProductPage/AddProductPage";
 import OrderPage from "./orderPage/OrderPage";
 import RolePage from "./rolePage/RolePage";
+import CreateOrderPage from "./createOrderPage/CreateOrderPage";
 
 export {
-    LoginPage, MenuPage, IngredientPage, AdminMasterPage, ProductPage, AddProductPage, OrderPage, RolePage
+    LoginPage,
+    MenuPage,
+    IngredientPage,
+    AdminMasterPage,
+    ProductPage,
+    AddProductPage,
+    OrderPage,
+    RolePage,
+    CreateOrderPage
 }

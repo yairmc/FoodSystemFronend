@@ -12,6 +12,10 @@ import TableRole from "./tableRole/TableRole.jsx";
 import CardRole from "./cardRole/CardRole.jsx";
 import Cmbx from "./cmbx/Cmbx";
 import ModalOrder from "./modalOrder/ModalOrder";
+import CardAddOrder from "./cardAddOrder/CardAddOrder";
+import InfoOrder from "./infoOrder/InfoOrder";
+import OrderProductDetail from "./orderProductDetail/OrderProductDetail";
+import ServiceDetail from "./serviceDetail/ServiceDetail";
 
 export {
     LoginForm,
@@ -27,5 +31,9 @@ export {
     TableRole,
     CardRole,
     Cmbx,
-    ModalOrder
+    ModalOrder,
+    CardAddOrder,
+    InfoOrder,
+    OrderProductDetail,
+    ServiceDetail
 }
