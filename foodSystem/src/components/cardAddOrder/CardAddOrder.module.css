@@ -1,0 +1,57 @@
+.card {
+    background-color: var(--white);
+    padding: 2rem;
+    margin-top: 2rem;
+    width: 80rem;
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.amountContainer {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 55rem;
+}
+
+.amountContainer h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.amountContainer p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.amountLeft {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.amountRight {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.btn button{
+    cursor: pointer;
+    border: none;
+    padding: 1rem 5rem;
+    background-color: var(--green);
+    color: var(--white);
+    font-size: 1.6rem;
+}
