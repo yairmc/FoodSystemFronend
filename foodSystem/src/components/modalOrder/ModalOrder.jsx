@@ -1,6 +1,8 @@
 import style from "./ModalOrder.module.css";
+import useModal from "../../hooks/useModal";
 
 const ModalOrder = () => {
+    const { handleOnChangeModal } = useModal();
     return (
         <div className={style.main}>
             <div className={style.modal}>
@@ -31,7 +33,9 @@ const ModalOrder = () => {
                         </div>
 
                         <div className={style.btn}>
-                            <button>Close</button>
+                            <button onClick={() => handleOnChangeModal(false)}>
+                                Close
+                            </button>
                         </div>
                     </div>
                 </div>

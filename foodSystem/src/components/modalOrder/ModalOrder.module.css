@@ -16,7 +16,7 @@
 .cardOrderDetail {
     margin: 10rem;
     background-color: var(--white);
-    width: 45rem;
+    width: 60rem;
     height: 50rem;
     box-shadow: 2px 2px 2px 1px rgba(66, 66, 66, 0.253);
     display: flex;
@@ -36,7 +36,7 @@
 .productDetail {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 5rem;
     box-shadow: 2px 2px 2px 1px rgba(66, 66, 66, 0.253);
 }
 
@@ -69,6 +69,7 @@
     border: none;
     padding: 1rem;
     font-size: 1.5rem;
-    background-color: var(--backColor);
+    color: var(--white);
+    background-color: var(--black);
     cursor: pointer;
 }
