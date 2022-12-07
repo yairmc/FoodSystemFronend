@@ -17,6 +17,18 @@ const ModalProducts = () => {
                     <CardProduct />
                     <CardProduct />
                     <CardProduct />
+                    <CardProduct />
+                    <CardProduct />
+                    <CardProduct />
+                    <CardProduct />
+                    <CardProduct />
+                    <CardProduct />
+                    <CardProduct />
+                    <CardProduct />
+                    <CardProduct />
+                    <CardProduct />
+                    <CardProduct />
+                    <CardProduct />
                 </div>
 
             </div>
@@ -24,7 +36,7 @@ const ModalProducts = () => {
                 <textarea name="" id="" placeholder="Detail"></textarea>
             </div>
             <div className={style.button}>
-                <button onClick={()=>handleOnChangeModal(false)}>
+                <button onClick={() => handleOnChangeModal(false)}>
                     Add Product
                 </button>
             </div>

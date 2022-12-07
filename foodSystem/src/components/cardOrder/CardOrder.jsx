@@ -1,5 +1,14 @@
 import style from "./CardOrder.module.css"
+import useModal from "../../hooks/useModal";
+
 const CardOrder = () => {
+    const { handleOnChangeModal, handleOnChangeModalSelected } = useModal();
+
+    const handleOnClickModal = (modal) => {
+        handleOnChangeModal(true);
+        handleOnChangeModalSelected(modal)
+    }
+
     return (
         <div className={style.card}>
             <h1>Order ID</h1>
@@ -30,7 +39,9 @@ const CardOrder = () => {
                 </div>
             </div>
             <div className={style.btns}>
-                <button className={style.btnEdit}>See More</button>
+                <button className={style.btnEdit} onClick={()=>{handleOnClickModal("orderModal")}}>
+                    See More
+                </button>
                 <button className={style.btnDelete}>Delete</button>
             </div>
         </div>
