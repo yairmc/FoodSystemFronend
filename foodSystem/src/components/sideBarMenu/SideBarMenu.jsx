@@ -12,7 +12,7 @@ const SideBarMenu = () => {
                     <Link to="/menu"><img src={IMG_BLACK_LOGO} alt="Logo Food System" /></Link>
                 </div>
                 <div className={style.menuBottom}>
-                    <Link>Creates Order</Link>
+                    <Link to="/admin/order/add">Create Order</Link>
                     <Link to="/admin/order">Order Management</Link>
                     <Link to="/admin/product">Product Management</Link>
                     <Link to="/admin/ingredient">Ingredient Management</Link>

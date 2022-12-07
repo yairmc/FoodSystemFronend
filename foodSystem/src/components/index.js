@@ -19,6 +19,8 @@ import ServiceDetail from "./serviceDetail/ServiceDetail";
 import CardUser from "./cardUser/CardUser";
 import InfoUser from "./infoUser/InfoUser"
 import TableUsers from "./tableUsers/TableUsers"
+import ModalProducts from "./modalProducts/ModalProducts";
+import CardProduct from "./cardProduct/CardProduct";
 
 export {
     LoginForm,
@@ -41,5 +43,7 @@ export {
     ServiceDetail,
     CardUser,
     InfoUser,
-    TableUsers
+    TableUsers,
+    ModalProducts,
+    CardProduct
 }

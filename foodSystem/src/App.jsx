@@ -1,10 +1,13 @@
 import { AuthProvider } from "./context/AuthContext";
+import { ModalProvider } from "./context/ModalContext";
 import AppRouter from "./router/AppRouter";
 function App() {
 
   return (
     <AuthProvider>
-      <AppRouter />
+      <ModalProvider>
+        <AppRouter />
+      </ModalProvider>
     </AuthProvider>
   )
 }
