@@ -1,14 +1,20 @@
 import style from "./CardAddOrder.module.css";
 import { OrderProductDetail } from "../../components";
+import useProducts from "../../hooks/useProducts";
+
 const CardAddOrder = () => {
+    const { productsOrder } = useProducts();
     return (
         <div className={style.card}>
             <h1>Order</h1>
-            <OrderProductDetail />
-            <OrderProductDetail />
-            <OrderProductDetail />
-            <OrderProductDetail />
-            <OrderProductDetail />
+            {
+                productsOrder.map((product, index) => (
+                    <OrderProductDetail
+                        key={index}
+                        product={product}
+                    />
+                ))
+            }
             <div>
                 <div className={style.amountContainer}>
                     <div className={style.amountLeft}>

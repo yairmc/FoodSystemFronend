@@ -21,6 +21,10 @@ function MenuPage() {
     evt.preventDefault();
     navigate("/admin/user");
   }
+  const handleOnSubmitRole = async (evt) => {
+    evt.preventDefault();
+    navigate("/admin/role");
+  }
 
   return (
     <div className={style.Menu}>
@@ -51,17 +55,19 @@ function MenuPage() {
           />
         </div>
         <div onClick={handleOnSubmitUser}>
-        <OptionMenu
-          option="userM"
-          name="User Managment"
-          description="Short Description Short Description Short Description"
-        />
+          <OptionMenu
+            option="userM"
+            name="User Managment"
+            description="Short Description Short Description Short Description"
+          />
         </div>
-        <OptionMenu
-          option="roleM"
-          name="Role Managment"
-          description="Short Description Short Description Short Description"
-        />
+        <div onClick={handleOnSubmitRole}>
+          <OptionMenu
+            option="roleM"
+            name="Role Managment"
+            description="Short Description Short Description Short Description"
+          />
+        </div>
       </div>
     </div>
   );

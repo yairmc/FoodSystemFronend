@@ -33,7 +33,7 @@ const ModalOrder = () => {
                         </div>
 
                         <div className={style.btn}>
-                            <button onClick={() => handleOnChangeModal(false)}>
+                            <button onClick={() =>  handleOnChangeModal(false)}>
                                 Close
                             </button>
                         </div>
