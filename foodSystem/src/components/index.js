@@ -21,6 +21,8 @@ import InfoUser from "./infoUser/InfoUser"
 import TableUsers from "./tableUsers/TableUsers"
 import ModalProducts from "./modalProducts/ModalProducts";
 import CardProduct from "./cardProduct/CardProduct";
+import CardProductNotReady from "./cardProductNotReady/CardProductNotReady";
+import CardPreparedProduct from "./cardPreparedProduct/CardPreparedProduct";
 
 export {
     LoginForm,
@@ -45,5 +47,7 @@ export {
     InfoUser,
     TableUsers,
     ModalProducts,
-    CardProduct
+    CardProduct,
+    CardProductNotReady,
+    CardPreparedProduct
 }

@@ -85,11 +85,11 @@ tr:nth-child(odd) td {
 
 .header{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     width: 100%;
     align-items:flex-end;
-    margin-left: 3.5rem;
+    margin-left: 8rem;
 }
 
 .info a{
