@@ -9,6 +9,7 @@ import RolePage from "./rolePage/RolePage";
 import CreateOrderPage from "./createOrderPage/CreateOrderPage";
 import UserPage from "./userPage/UserPage"
 import CreateProductPage from "./createProductPage/CreateProductPage"
+import PreparedProductPage from "./productPage/PreparedProductPage";
 
 export {
     LoginPage,
@@ -21,5 +22,6 @@ export {
     RolePage,
     CreateOrderPage,
     UserPage,
-    CreateProductPage
+    CreateProductPage, 
+    PreparedProductPage
 }

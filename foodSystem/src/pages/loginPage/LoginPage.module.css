@@ -63,3 +63,7 @@ html {
 .headerContent{
     text-align: center;
 }
+
+.headerContent p{
+    color: black;
+}
