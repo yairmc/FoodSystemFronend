@@ -16,7 +16,7 @@ const SideBarMenu = () => {
                     <Link to="/admin/order">Order Management</Link>
                     <Link to="/admin/product">Product Management</Link>
                     <Link to="/admin/ingredient">Ingredient Management</Link>
-                    <Link>Create Product</Link>
+                    <Link to="/admin/product/add">Create Product</Link>
                     <Link to="/admin/user">Users Management</Link>
                     <Link to="/admin/role">Role Management</Link>
                     <Link to="/" className={style.logOut}>Log Out</Link>
