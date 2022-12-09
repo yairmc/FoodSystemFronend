@@ -1,7 +1,9 @@
+import useIngredient from "../../hooks/useIngredient";
 import style from "./TableIngredients.module.css";
 import IMG_DELETE from "/img/deleteIcon.svg";
 import IMG_UPDATE from "/img/editIcon.svg";
 const TableIngredients = () => {
+    const { ingredients, handleSelectIngredient } = useIngredient();
     return (
         <>
             <table className={style.containerTable}>
@@ -23,48 +25,34 @@ const TableIngredients = () => {
 
                 </thead>
                 <tbody className={style.bodyTable}>
-                    <tr>
-                        <th>
-                            Zanahoria
-                        </th>
-                        <th>
-                            50
-                        </th>
-                        <th>
-                            <img src={IMG_UPDATE} alt="" />
-                        </th>
-                        <th>
-                            <img src={IMG_DELETE} alt="" />
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>
-                            Papas
-                        </th>
-                        <th>
-                            60
-                        </th>
-                        <th>
-                            <img src={IMG_UPDATE} alt="" />
-                        </th>
-                        <th>
-                            <img src={IMG_DELETE} alt="" />
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>
-                            Queso
-                        </th>
-                        <th>
-                            22
-                        </th>
-                        <th>
-                            <img src={IMG_UPDATE} alt="" />
-                        </th>
-                        <th>
-                            <img src={IMG_DELETE} alt="" />
-                        </th>
-                    </tr>
+                    {
+                        ingredients.map((ingredient, i) => (
+                            <tr key={i}>
+                                <th>
+                                    {ingredient.name}
+                                </th>
+                                <th>
+                                    {ingredient.stock}
+                                </th>
+                                <th>
+                                    <button
+                                        onClick={() => handleSelectIngredient(ingredient.id, "update")}
+                                        className={style.btnAction}
+                                    >
+                                        <img src={IMG_UPDATE} alt="" />
+                                    </button>
+                                </th>
+                                <th>
+                                    <button
+                                        onClick={() => handleSelectIngredient(ingredient.id, "delete")}
+                                        className={style.btnAction}
+                                    >
+                                        <img src={IMG_DELETE} alt="" />
+                                    </button>
+                                </th>
+                            </tr>
+                        ))
+                    }
                 </tbody>
 
             </table>
