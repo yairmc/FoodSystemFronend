@@ -10,6 +10,16 @@ const fetchAllProducts = async () => {
     }
 }
 
+const fetchAddProduct = async (product) => {
+    try {
+        const { data } = await axios.post(`${url}/products`, product);
+        return data;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
 export {
-    fetchAllProducts
+    fetchAllProducts,
+    fetchAddProduct
 }
