@@ -3,7 +3,7 @@ import MenuPage from "./menuPage/MenuPage";
 import IngredientPage from "./ingredientPage/IngredientPage";
 import ProductPage from "./productPage/ProductPage";
 import AdminMasterPage from "./adminMasterPage/AdminMasterPage";
-import AddProductPage from "./productPage/addProductPage/AddProductPage";
+import AddProductPage from "./addProductPage/AddProductPage";
 import OrderPage from "./orderPage/OrderPage";
 import RolePage from "./rolePage/RolePage";
 import CreateOrderPage from "./createOrderPage/CreateOrderPage";

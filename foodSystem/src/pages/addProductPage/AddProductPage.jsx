@@ -1,5 +1,5 @@
-import { SideBarMenu, Search, AddProduct } from "../../../components/index"
 import style from "./AddProductPage.module.css"
+import { AddProduct } from "../../components/index"
 
 const AddProductPage = () => {
   return (

@@ -87,10 +87,10 @@ label{
 }
 
 .generalCardProduct {
+    height: 95%;
     background-color: var(--white);
     padding: 2rem;
     margin-top: 2rem;
-    width: 89rem;
     display: flex;
     padding: 5rem;
     
