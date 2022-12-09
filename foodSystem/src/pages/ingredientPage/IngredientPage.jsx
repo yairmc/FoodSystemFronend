@@ -1,6 +1,15 @@
+import { useEffect } from "react";
+import useIngredient from "../../hooks/useIngredient";
 import style from "./IngredientPage.module.css"
-import { Search, TableIngredients, CardIngredient, InfoIngredient } from "../../components/index"
+import { Search, TableIngredients, CardIngredient, InfoIngredient } from "../../components/index";
 const IngredientPage = () => {
+
+  const { loadPageIngredinets } = useIngredient();
+
+  useEffect(() => {
+    loadPageIngredinets();
+  }, []);
+
   return (
     <>
       <main className={style.layoutMain}>
