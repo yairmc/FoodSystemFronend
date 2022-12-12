@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 22rem;
 }
 
 .card p {
@@ -39,12 +40,12 @@
     gap: 1rem;
 }
 
-.btns a{
+.btns a {
     font-weight: 400;
     color: var(--white);
     text-decoration: none;
     transition: .2s ease;
-   }
+}
 
 .btns button {
     width: 7rem;
@@ -62,4 +63,46 @@
 
 .btnDelete {
     background-color: var(--black);
+}
+
+.optionModal {
+    position: relative
+}
+
+.modalOptionSection {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 1rem;
+    width: 20rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px 1px rgba(66, 66, 66, 0.253);
+    margin-left: -10.5rem;
+}
+
+.modalOptionSection p {
+    text-align: center;
+    color: black;
+}
+
+.modalOption__actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.modalOption__actions button {
+    cursor: pointer;
+}
+
+.modalOption__cancel {
+    background-color: rgb(255, 52, 52);
+}
+
+.modalOption__acept {
+    background-color: var(--green);
 }

@@ -1,10 +1,16 @@
 import { createContext, useState } from "react";
-import { fetchAddProduct, fetchAllProducts } from "../API/apiProducts"
+import {
+    fetchAddProduct,
+    fetchAllProducts,
+    fetchUpdateProduct,
+    fetchDeleteProduct
+} from "../API/apiProducts"
 
 const ProductContext = createContext();
 
 const ProductProvider = ({ children }) => {
     const [products, setProducts] = useState([]);
+    const [productsFilter, setProductsFilter] = useState([]);
     const [productsOrder, setProductsOrder] = useState([]);
     const [productSelected, setProductSelected] = useState(null);
     const [product, setProduct] = useState({
@@ -16,19 +22,22 @@ const ProductProvider = ({ children }) => {
         type: "Packaged",
         stock: ""
     });
+    const [productAction, setProductAction] = useState({ action: "add", id: -1 });
 
     {/**Empieza todo de GetAllProducts */ }
     const getProducts = async () => {
         try {
             const result = await fetchAllProducts();
             setProducts(result);
+            setProductsFilter(result);
         } catch (error) {
             console.log(error);
         }
     }
 
-    const handleSelectProduct = () => {
-        setProductSelected(product);
+    const handleSelectProduct = (productAux) => {
+        setProductSelected(productAux);
+        setProduct(productAux);
     }
 
     const handleAddProductOrder = () => {
@@ -46,11 +55,43 @@ const ProductProvider = ({ children }) => {
             const result = await fetchAddProduct(product);
             if (result) {
                 setProduct(result);
+                return true;
+            } else {
+                return false;
             }
+        } catch (error) {
+            console.log(error);
+            return false;
+        }
+    }
+
+    const handleOnUpdate = async () => {
+        try {
+            const result = await fetchUpdateProduct({ ...product });
+            if (result) {
+                setProduct(result);
+                return true;
+            } else {
+                return false;
+            }
+        } catch (error) {
+            console.log(error.response);
+            return false;
+        }
+    }
+
+    const handleOnDeleteProduct = async (id) => {
+        try {
+            const result = await fetchDeleteProduct(id);
+            if (result) {
+                await getProducts();
+            }
+
         } catch (error) {
             console.log(error);
         }
     }
+
 
     const handleOnChangeFormInput = (e) => {
         let { value, name } = e.target;
@@ -73,8 +114,15 @@ const ProductProvider = ({ children }) => {
                 productsOrder,
                 handleAddProductOrder,
                 handleAddProduct,
-                handleOnChangeFormInput
-
+                handleOnChangeFormInput,
+                productAction,
+                setProductAction,
+                setProduct,
+                setProductSelected,
+                handleOnUpdate,
+                handleOnDeleteProduct,
+                productsFilter,
+                setProductsFilter
             }}
         >
             {children}

@@ -4,6 +4,7 @@
     margin-top: 2rem;
     margin-right: 10rem;
     width: 32rem;
+    margin:  0 auto;
     
 }
 
@@ -22,13 +23,15 @@
     border: none;
     outline: none;
     padding: .5rem;
-    width: 18rem;
     font-size: 1.4rem;
+    width: 100%;
+
 }   
+
 
 .inputProduct{
     border-bottom: 0.2rem solid black;
-    width: 18rem;
+    width: 100%;
     margin: 1.5rem;
 }
 
@@ -44,11 +47,17 @@ select {
  }
 
  .btnCard input{
-    margin-top: 12rem;
+    margin-top: 5rem;
     width: 18rem;
     color: var(--white);
     background-color: var(--green);
     font-family: var(--poppins);
+    cursor: pointer;
+    transition: .2s ease;
+    text-transform: uppercase;
+ }
+ .btnCard input:hover{
+    transform: scale(1.1);
  }
 
  .cardInfoProducts {
@@ -87,7 +96,6 @@ label{
 }
 
 .generalCardProduct {
-    height: 95%;
     background-color: var(--white);
     padding: 2rem;
     margin-top: 2rem;
@@ -96,5 +104,19 @@ label{
     
 }
 
+.messageAction{
+    padding: 1rem 4rem;
+    background-color: var(--green);
+    text-align: center;
+    
+}
 
-
+.success{
+    background-color: var(--green)
+}
+.error{
+    background-color: rgb(255, 63, 63);
+}
+h1{
+    text-transform: capitalize;
+}
