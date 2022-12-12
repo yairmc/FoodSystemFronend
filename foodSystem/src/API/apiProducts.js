@@ -19,7 +19,28 @@ const fetchAddProduct = async (product) => {
     }
 }
 
+const fetchUpdateProduct = async (product) => {
+    try {
+        const { data } = await axios.put(`${url}/products/${product.id}`, product);
+        return data;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+const fetchDeleteProduct = async (idProduct) => {
+    try {
+        const { data } = await axios.delete(`${url}/products/${idProduct}`);
+        return data;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+
 export {
     fetchAllProducts,
-    fetchAddProduct
+    fetchAddProduct,
+    fetchUpdateProduct,
+    fetchDeleteProduct
 }

@@ -1,152 +1,105 @@
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import style from "./AddProduct.module.css";
 import useProducts from "../../hooks/useProducts";
 
 
 const AddProduct = () => {
-    const { handleAddProduct, handleOnChangeFormInput } = useProducts();
+    let navigate = useNavigate();
+    const {
+        handleAddProduct,
+        handleOnChangeFormInput,
+        productAction,
+        productSelected,
+        product,
+        handleOnUpdate
+    } = useProducts();
+    const [actionSuccess, setActionSuccess] = useState({ msg: "", state: false, success: false });
+    const productAux = productSelected ? productSelected : product;
     const handleOnSubmit = async (evt) => {
         evt.preventDefault();
-        await handleAddProduct()
+        if (productAction.action === "add") {
+            const isProductAdded = await handleAddProduct();
+            if (isProductAdded) {
+                setActionSuccess({ msg: "Producto agregado", state: true, success: true });
+                setTimeout(() => {
+                    setActionSuccess({ msg: "", state: false });
+                    navigate("/admin/product");
+                }, 2000);
+            } else {
+                setActionSuccess({ msg: "Todos los campos son obligatorios", state: true, success: false });
+                setTimeout(() => {
+                    setActionSuccess({ msg: "", state: false });
+                }, 2000);
+            }
+        } else if (productAction.action === "edit") {
+            const isProductUpdated = await handleOnUpdate();
+            if (isProductUpdated) {
+                setActionSuccess({ msg: "Producto actualizado", state: true, success: true });
+                setTimeout(() => {
+                    setActionSuccess({ msg: "", state: false });
+                    navigate("/admin/product");
+                }, 2000);
+            } else {
+                setActionSuccess({ msg: "Todos los campos son obligatorios", state: true, success: false });
+                setTimeout(() => {
+                    setActionSuccess({ msg: "", state: false });
+                }, 2000);
+            }
+        }
     }
     return (
         <>
             <div className={style.generalCardProduct}>
                 <div className={style.cardProduct}>
                     <form action="" className={style.formProduct}>
-                        <h1>Add Product</h1>
+                        <h1>{productAction.action} Product</h1>
                         <div className={style.inputProduct} >
                             <input type="text" nombre="nombre" name="name" placeholder="Name"
+                                defaultValue={productAux?.name}
                                 onChange={handleOnChangeFormInput} />
                         </div>
                         <div className={style.inputProduct} >
                             <input type="text" cost="cost" name="cost" placeholder="Cost"
+                                defaultValue={productAux?.cost}
                                 onChange={handleOnChangeFormInput} />
                         </div>
 
                         <div className={style.inputProduct} >
                             <input type="text" baseprice="basePrice" name="basePrice" placeholder="Base price"
+                                defaultValue={productAux?.basePrice}
                                 onChange={handleOnChangeFormInput} />
                         </div>
 
                         <div className={style.inputProduct} >
                             <input type="text" taxes="taxes" name="taxes" placeholder="Taxes"
+                                defaultValue={productAux?.taxes}
                                 onChange={handleOnChangeFormInput} />
-                        </div>
-
-                        <div className={style.inputProduct} >
-                            <select name="" id="" className={style.selectType}>
-                                <option value="">Packaged</option>
-                                <option value="">Prepared</option>
-                            </select>
                         </div>
 
                         <div className={style.inputProduct} >
                             <input type="number" stock="stock" name="stock" placeholder="Stock"
+                                defaultValue={productAux?.stock}
                                 onChange={handleOnChangeFormInput} />
+                        </div>
+                        <div>
+                            {
+                                actionSuccess.state ? (
+                                    <p className={`${style.messageAction} 
+                                    ${actionSuccess.success ?
+                                            style.success :
+                                            style.error}`}>
+                                        {actionSuccess.msg}
+                                    </p>
+                                ) : null
+                            }
                         </div>
 
                         <div className={style.btnCard}>
-                            <input type="submit" value="Add" onClick={handleOnSubmit} />
+                            <input type="submit" value={productAction.action} onClick={handleOnSubmit} />
                         </div>
 
                     </form>
-                </div>
-
-                <div className={style.cardRight}>
-                    <div className={style.cardInfoProducts}>
-                        <h1 className={style.tableTitle}>Ingredients</h1>
-                        <table className={style.containerTable}>
-
-                            <tbody className={style.bodyTable}>
-                                <tr>
-                                    <th className={style.checkColumn}>
-                                        <input type="checkbox" />
-                                    </th>
-                                    <th>
-                                        IngredientName
-                                    </th>
-
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <input type="checkbox" />
-                                    </th>
-                                    <th>
-                                        IngredientName
-                                    </th>
-
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <input type="checkbox" />
-                                    </th>
-                                    <th>
-                                        IngredientName
-                                    </th>
-
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <input type="checkbox" />
-                                    </th>
-                                    <th>
-                                        IngredientName
-                                    </th>
-
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <input type="checkbox" />
-                                    </th>
-                                    <th>
-                                        IngredientName
-                                    </th>
-
-                                </tr><tr>
-                                    <th>
-                                        <input type="checkbox" />
-                                    </th>
-                                    <th>
-                                        IngredientName
-                                    </th>
-
-                                </tr><tr>
-                                    <th>
-                                        <input type="checkbox" />
-                                    </th>
-                                    <th>
-                                        IngredientName
-                                    </th>
-
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <input type="checkbox" />
-                                    </th>
-                                    <th>
-                                        IngredientName
-                                    </th>
-
-                                </tr>
-                            </tbody>
-
-                        </table>
-                    </div>
-
-                    <div className={style.cardInfoProducts}>
-                        <div className={style.info}>
-                            <label htmlFor="">All Products</label>
-                            <p className={style.quantity}>200</p>
-                        </div>
-                        <div className={style.info}>
-                            <label htmlFor="">Prepared Products</label>
-                            <p className={style.quantity}>60</p>
-                        </div>
-                        <div className={style.info}>
-                            <label htmlFor="">Packaged Products</label>
-                            <p className={style.quantity}>140</p>
-                        </div>
-                    </div>
                 </div>
 
             </div>

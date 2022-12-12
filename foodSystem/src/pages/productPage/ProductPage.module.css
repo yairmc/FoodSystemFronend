@@ -44,62 +44,67 @@ tr:nth-child(odd) td {
 }
 
 
-.btnCard{
+.btnCard {
     width: 20rem;
     color: var(--white);
     background-color: var(--green);
     font-family: var(--poppins);
     padding: 1rem;
     align-content: flex-end;
- }
-
-.btnCard a{
- font-weight: 400;
- color: var(--white);
- text-decoration: none;
- transition: .2s ease;
 }
 
-.btnCard p{
+.btnCard button {
     font-weight: 400;
     color: var(--white);
     text-decoration: none;
     transition: .2s ease;
-   }
+    background-color:transparent;
+    border: none;
+    width:100%;
+    cursor: pointer;
+}
+
+.btnCard p {
+    font-weight: 400;
+    color: var(--white);
+    text-decoration: none;
+    transition: .2s ease;
+}
 
 .headerProduct {
     display: flex;
     flex-direction: column;
-    justify-content: space-around; 
+    justify-content: space-around;
 }
 
 .cardsContainer {
+    margin-top: 5rem;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin: 2rem;
     gap: 3rem;
-    width: 20rem;
+    width: 100%;
     height: 30rem;
     background-color: var(--backColor);
 }
 
-.header{
+.header {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 2rem;
     width: 100%;
-    align-items:flex-end;
+    align-items: flex-end;
     margin-left: 3.5rem;
 }
 
-.info a{
+.info a {
     font-weight: 400;
     color: gray;
     text-decoration: none;
     transition: .2s ease;
 }
 
-.info p{
+.info p {
     font-weight: 400;
     color: gray;
     text-decoration: none;
